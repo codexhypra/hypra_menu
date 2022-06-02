@@ -1,0 +1,160 @@
+@font-face {
+    font-family: font3;
+    src: url('../fonts/BlankRiver.ttf');
+}
+
+@font-face {
+    font-family: segoeui;
+    src: url('../fonts/segoeui.ttf');
+}
+
+@font-face {
+    font-family: gotham;
+    src: url('../fonts/BoxedRound.ttf');
+}
+
+body {
+    overflow: hidden;
+}
+
+.menu {
+    font-family: gotham;
+    min-width: 350px;
+    position: absolute;
+    overflow: hidden;
+    padding: 15px 20px;
+}
+
+.menu.align-left {
+    left: 40;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.menu.align-top-left {
+    left: 40;
+    top: 40;
+}
+
+.menu.align-top {
+    left: 50%;
+    top: 40;
+    transform: translate(-50%, 0);
+}
+
+.menu.align-top-right {
+    right: 10;
+    top: 40;
+}
+
+.menu.align-right {
+    right: 40;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.menu.align-bottom-right {
+    right: 0;
+    bottom: 270;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.menu.align-bottom {
+    left: 50%;
+    bottom: 40;
+    transform: translate(-50%, 0);
+}
+
+.menu.align-bottom-left {
+    left: 40;
+    bottom: 40;
+}
+
+.menu.align-center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu .head {
+    width: auto;
+    vertical-align: middle;
+    border-top-left-radius: 10px;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.menu .head span {
+    color: #E62333;
+    font-weight: bold;
+}
+
+.menu .head hr {
+    margin: 4px 0;
+}
+
+.menu .subtitle {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background: linear-gradient(70deg, #000000, rgba(255, 255, 255, 0));
+    color: rgba(255, 255, 255, .6);
+    font-size: 1.3rem;
+}
+
+.menu .headtitle {
+    height: 50;
+    padding-top: 10px;
+    padding-left: 10px;
+    background: linear-gradient(70deg, #000000, rgba(255, 255, 255, 0));
+    text-align: start;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    border-radius: 10px 0px 0px 0px;
+}
+
+.menu .headimageright {
+    position: absolute;
+    top: -52;
+    left: -35;
+    height: 100px;
+}
+
+.menu .menu-items {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.menu .menu-items::-webkit-scrollbar {
+    width: 0.5em;
+    border-radius: 5px;
+}
+
+.menu .menu-items::-webkit-scrollbar-track {
+    background-color: transparent;
+    margin-left: 5px;
+}
+
+.menu .menu-items::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.menu .menu-items .menu-item {
+    border-radius: 0px;
+    padding: 8px 12px;
+    background: linear-gradient(70deg, #000000, rgba(255, 255, 255, 0));
+    color: rgba(255, 255, 255, .7);
+    border: 2px 0px 0px 2px solid transparent;
+}
+
+.menu .menu-items .menu-item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.menu .menu-items .menu-item.selected {
+    border-radius: 0px 0px 0px 5px;
+    border-color: #3D1C24;
+    background: linear-gradient(70deg, #E62333, rgba(255, 255, 255, 0));
+    color: white;
+}
